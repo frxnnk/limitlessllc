@@ -53,15 +53,14 @@ export default ({ roundedHeaderButton }) => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              Beautiful React Templates <span tw="text-primary-500">for you.</span>
+            Alcanza tu <span tw="text-primary-500">libertad empresarial</span> con nosotros 
             </Heading>
             <Paragraph>
-              Our templates are easy to setup, understand and customize. Fully modular components with a variety of
-              pages and components.
+            Tus negocios en todo el planeta.
             </Paragraph>
             <Actions>
               <input type="text" placeholder="Your E-mail Address" />
-              <button>Get Started</button>
+              <button>Comenza ya!</button>
             </Actions>
             <CustomersLogoStrip>
               <p>Our TRUSTED Customers</p>

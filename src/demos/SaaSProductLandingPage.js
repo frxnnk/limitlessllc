@@ -17,6 +17,9 @@ import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import PopularAndRecentBlogPosts from "components/blogs/PopularAndRecentBlogPosts";
+import ContactUs from "pages/ContactUs";
+import SimpleContactUs from "components/forms/SimpleContactUs";
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -25,25 +28,11 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero roundedHeaderButton={true} />
-      <Features
-        subheading={<Subheading>Features</Subheading>}
-        heading={
-          <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
-          </>
-        }
-      />
-      <MainFeature
-        subheading={<Subheading>Quality Work</Subheading>}
-        imageSrc={heroScreenshotImageSrc}
-        imageBorder={true}
-        imageDecoratorBlob={true}
-      />
       <FeatureWithSteps
-        subheading={<Subheading>STEPS</Subheading>}
+        subheading={<Subheading>Pasos</Subheading>}
         heading={
           <>
-            Easy to <HighlightedText>Get Started.</HighlightedText>
+            Nuestro proceso es  <HighlightedText>muy sencillo</HighlightedText>
           </>
         }
         textOnLeft={false}
@@ -51,7 +40,22 @@ export default () => {
         imageDecoratorBlob={true}
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
       />
-      <MainFeature2
+      {/* <Features
+        subheading={<Subheading>Features</Subheading>}
+        heading={
+          <>
+            We have Amazing <HighlightedText>Service.</HighlightedText>
+          </>
+        }
+      /> */}
+      
+      {/* <MainFeature
+        subheading={<Subheading>Quality Work</Subheading>}
+        imageSrc={heroScreenshotImageSrc}
+        imageBorder={true}
+        imageDecoratorBlob={true}
+      /> */}
+      {/* <MainFeature2
         subheading={<Subheading>VALUES</Subheading>}
         heading={
           <>
@@ -74,7 +78,8 @@ export default () => {
             iconContainerCss: tw`bg-red-300 text-red-800`
           }
         ]}
-      />
+      /> */}
+      <PopularAndRecentBlogPosts />
       <Pricing
         subheading={<Subheading>Pricing</Subheading>}
         heading={
@@ -85,29 +90,29 @@ export default () => {
         plans={[
           {
             name: "Personal",
-            price: "$17.99",
+            price: "$399.99",
             duration: "Monthly",
-            mainFeature: "For Individuals",
-            features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance"]
+            mainFeature: "For Small Businesses",
+            features: ["Registro de la empresa", "EIN"]
           },
           {
             name: "Business",
-            price: "$37.99",
+            price: "$499.99",
             duration: "Monthly",
             mainFeature: "For Small Businesses",
-            features: ["60 Templates", "15 Landing Pages", "22 Internal Pages", "Priority Assistance"],
+            features: ["Registro de la empresa", "EIN", "Apertura de cuenta bancaria"],
             featured: true
           },
           {
             name: "Enterprise",
-            price: "$57.99",
+            price: "$699.99",
             duration: "Monthly",
             mainFeature: "For Large Companies",
-            features: ["90 Templates", "27 Landing Pages", "37 Internal Pages", "Personal Assistance"]
+            features: ["Registro de la empresa", "EIN", "Apertura de cuenta bancaria", "Pagina web para tu empresa."],
           }
         ]}
       />
-      <Testimonial
+      {/* <Testimonial
         subheading={<Subheading>Testimonials</Subheading>}
         heading={
           <>
@@ -136,7 +141,8 @@ export default () => {
             customerTitle: "Founder, EventsNYC"
           }
         ]}
-      />
+      /> */}
+
       <FAQ
         subheading={<Subheading>FAQS</Subheading>}
         heading={
@@ -177,7 +183,7 @@ export default () => {
           }
         ]}
       />
-      <GetStarted/>
+      <SimpleContactUs></SimpleContactUs>
       <Footer />
     </AnimationRevealPage>
   );

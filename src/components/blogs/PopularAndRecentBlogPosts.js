@@ -62,9 +62,9 @@ export default () => {
         "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80",
       authorImageSrc:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-      title: "Tips on how to travel safely in foreign countries",
+      title: "¿Que es una LLC?",
       description:
-        "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
+        "En este blog exploraremos lo que es una LLC (Limited Liability Company), cómo funciona y qué ventajas ofrece. Aprenderemos acerca de la estructura jurídica de una LLC, cómo se diferencia de otras formas de empresas y cómo se puede establecer una.",
       authorName: "Charlotte Delos",
       authorProfile: "Travel Advocate",
       url: "https://timerse.com"
@@ -74,9 +74,9 @@ export default () => {
         "https://images.unsplash.com/photo-1563784462041-5f97ac9523dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80",
       authorImageSrc:
         "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-      title: "Enjoying the beach life while on a vacation",
+      title: "Ventajas de una LLC",
       description:
-        "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
+        "Este blog explora las Ventajas de una LLC. Desde la limitación de responsabilidad hasta la flexibilidad fiscal, descubriremos por qué una LLC es una excelente opción para empresas pequeñas y medianas.",
       authorName: "Adam Cuppy",
       authorProfile: "Vlogger",
       url: "https://reddit.com"
@@ -126,7 +126,7 @@ export default () => {
       <ContentWithPaddingXl>
         <Row>
           <PopularPostsContainer>
-            <Heading>Popular Posts</Heading>
+            <Heading>Conoce nuestro blog</Heading>
             <PostsContainer>
               {popularPosts.map((post, index) => (
                 <Post key={index} href={post.url} className="group" initial="rest" whileHover="hover" animate="rest">
@@ -148,7 +148,7 @@ export default () => {
               ))}
             </PostsContainer>
           </PopularPostsContainer>
-          <RecentPostsContainer>
+          {/* <RecentPostsContainer>
             <Heading>Recent Posts</Heading>
             <PostsContainer>
               {recentPosts.map((post, index) => (
@@ -161,7 +161,7 @@ export default () => {
               </Post>
               ))}
             </PostsContainer>
-          </RecentPostsContainer>
+          </RecentPostsContainer> */}
         </Row>
       </ContentWithPaddingXl>
     </Container>

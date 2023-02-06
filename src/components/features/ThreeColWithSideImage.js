@@ -71,13 +71,23 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
     {
       imageSrc: ShieldIconImage,
       title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+      description: "Garantizamos la seguridad de tus datos y transacciones durante todo el proceso de creación de tu empresa."
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    { imageSrc: SupportIconImage, title: "24/7 Support",
+    description: "Nuestro equipo de soporte está disponible las 24 horas del día para responder a cualquier pregunta o inquietud que puedas tener."
+    },
+    { imageSrc: CustomizeIconImage, title: "Customizable",
+    description: "Ofrecemos soluciones personalizadas para satisfacer tus necesidades específicas."
+    },
+    { imageSrc: ReliableIconImage, title: "Reliable",
+    description: "Te brindamos un servicio confiable y de calidad para ayudarte a lograr tus objetivos empresariales."  
+    },
+    { imageSrc: FastIconImage, title: "Fast",
+    description: "Te aseguramos un proceso de creación rápido y eficiente para que puedas comenzar a operar cuanto antes."
+    },
+    { imageSrc: SimpleIconImage, title: "Easy",
+    description: "Hacemos que sea fácil y accesible para ti abrir y mantener una empresa, sin importar dónde te encuentres."
+    }
   ];
 
   if (!cards) cards = defaultCards;

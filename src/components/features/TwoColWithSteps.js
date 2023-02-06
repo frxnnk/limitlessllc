@@ -59,16 +59,16 @@ export default ({
 
   const defaultSteps = [
     {
-      heading: "Register",
-      description: "Create an account with us using Google or Facebook."
+      heading: "Registrate",
+      description: "Luego de registrarte vas a poder administrar desde tu dashboard todas tus empresas"
     },
     {
-      heading: "Download",
-      description: "Browse and Download the template that you like from the marketplace."
+      heading: "Elegi tu plan",
+      description: "Tenemos distintas opciones para que puedas elegir la que más se adapte a tu empresa. Poder crear tu empresa, tu cuenta de banco y tu pagina web."
     },
     {
-      heading: "Run",
-      description: "Follow the instructions to setup and customize the template to your needs."
+      heading: "Recibe tu empresa",
+      description: "En un plazo de 10 a 15 dias habiles vas a poder recibir tu empresa."
     }
   ];
 

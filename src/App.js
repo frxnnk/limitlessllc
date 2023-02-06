@@ -104,7 +104,7 @@ import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
-
+import SaaSProductLandingPage from "demos/SaaSProductLandingPage";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -121,7 +121,7 @@ export default function App() {
           <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
-          <Route path="/" element={<HostingCloudLandingPage />} />
+          <Route path="/" element={<SaaSProductLandingPage />} />
           {/* <Route path="/limitless" element={<HostingCloudLandingPage />} /> */}
         </Routes>
       </Router>
