@@ -40,28 +40,28 @@ export default () => {
       <Content>
         <FormContainer>
           <div tw="mx-auto max-w-4xl">
-            <h2>Organize an Event</h2>
+            <h2>Hablemos :)</h2>
             <form action="#">
               <TwoColumn>
                 <Column>
                   <InputContainer>
-                    <Label htmlFor="name-input">Your Name</Label>
+                    <Label htmlFor="name-input">Nombre</Label>
                     <Input id="name-input" type="text" name="name" placeholder="E.g. John Doe" />
                   </InputContainer>
                   <InputContainer>
-                    <Label htmlFor="email-input">Your Email Address</Label>
+                    <Label htmlFor="email-input">Mail</Label>
                     <Input id="email-input" type="email" name="email" placeholder="E.g. john@mail.com" />
                   </InputContainer>
                 </Column>
                 <Column>
                   <InputContainer tw="flex-1">
-                    <Label htmlFor="name-input">Your Message</Label>
+                    <Label htmlFor="name-input">Tu mensaje</Label>
                     <TextArea id="message-input" name="message" placeholder="E.g. Details about your event"/>
                   </InputContainer>
                 </Column>
               </TwoColumn>
 
-              <SubmitButton type="submit" value="Submit">Submit</SubmitButton>
+              <SubmitButton type="submit" value="Submit">Enviar</SubmitButton>
             </form>
           </div>
           <SvgDotPattern1 />

@@ -147,40 +147,40 @@ export default () => {
         subheading={<Subheading>FAQS</Subheading>}
         heading={
           <>
-            You have <HighlightedText>Questions ?</HighlightedText>
+            Tenes <HighlightedText>Preguntas ?</HighlightedText>
           </>
         }
-        faqs={[
+        faqs = {[
           {
-            question: "Are all the templates easily customizable ?",
+            question: "¿Qué servicios ofrece su empresa?",
             answer:
-              "Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            question: "How long do you usually support an standalone template for ?",
+            "Nuestra empresa ofrece servicios de formación de LLC, apertura de cuenta bancaria y diseño web."
+            },
+            {
+            question: "¿Cuánto tiempo se tarda en formar una LLC y abrir una cuenta bancaria?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            question: "What kind of payment methods do you accept ?",
+            "El plazo para formar una LLC y abrir una cuenta bancaria varía, pero generalmente completamos el proceso en 1-2 semanas."
+            },
+            {
+            question: "¿Ofrecen servicios de diseño web?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            question: "Is there a subscribption service to get the latest templates ?",
+            "El plazo para formar una LLC y abrir una cuenta bancaria varía, pero generalmente completamos el proceso en 1-2 semanas."
+            },
+            {
+            question: "¿Es su equipo experimentado en formación de LLC y apertura de cuentas bancarias?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            question: "Are the templates compatible with the React ?",
+            "Nuestro equipo es altamente experimentado y conocedor en formación de LLC y apertura de cuentas bancarias, brindando servicios de alta calidad a nuestros clientes."
+            },
+            {
+            question: "¿Qué incluyen cada uno de sus planes de precios?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            question: "Do you really support Internet Explorer 11 ?",
+            "Cada uno de nuestros planes de precios incluye diferentes niveles de servicios, incluyendo formación de LLC, apertura de cuenta bancaria y diseño web. Por favor, consulte nuestra página de precios para obtener más detalles."
+            },
+            {
+            question: "¿Cómo puedo empezar con sus servicios?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          }
+            "Para comenzar con nuestros servicios, simplemente seleccione el plan de precios que mejor se adapte a sus necesidades y complete el formulario en línea. Luego, nuestro equipo lo guiará a través del resto del proceso."
+            }
         ]}
       />
       <SimpleContactUs></SimpleContactUs>
