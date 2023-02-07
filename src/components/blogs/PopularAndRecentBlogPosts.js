@@ -126,7 +126,7 @@ export default () => {
       <ContentWithPaddingXl>
         <Row>
           <PopularPostsContainer>
-            <Heading>Blogs</Heading>
+            <Heading>Populares</Heading>
             <PostsContainer>
               {popularPosts.map((post, index) => (
                 <Post key={index} href={post.url} className="group" initial="rest" whileHover="hover" animate="rest">
@@ -148,8 +148,8 @@ export default () => {
               ))}
             </PostsContainer>
           </PopularPostsContainer>
-          {/* <RecentPostsContainer>
-            <Heading>Recent Posts</Heading>
+          <RecentPostsContainer>
+            <Heading>Post recientes</Heading>
             <PostsContainer>
               {recentPosts.map((post, index) => (
               <Post key={index} href={post.url} className="group">
@@ -161,7 +161,7 @@ export default () => {
               </Post>
               ))}
             </PostsContainer>
-          </RecentPostsContainer> */}
+          </RecentPostsContainer>
         </Row>
       </ContentWithPaddingXl>
     </Container>

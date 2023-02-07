@@ -87,7 +87,7 @@ export default ({
   heading = "Flexible Plans.",
   description = "Equilibrando Comodidad y Accesibilidad en Nuestras Soluciones Personalizadas",
   plans = null,
-  primaryButtonText = "Buy Now"
+  primaryButtonText = "Comprar"
 }) => {
   const defaultPlans = [
     {

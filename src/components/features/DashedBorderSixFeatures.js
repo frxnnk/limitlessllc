@@ -28,9 +28,9 @@ const Column = styled.div`
 `;
 
 const Card = styled.div`
-  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-primary-500 rounded-lg mt-12`}
+  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-red-500 rounded-lg mt-12`}
   .imageContainer {
-    ${tw`border-2 border-primary-500 text-center rounded-full p-6 flex-shrink-0 relative`}
+    ${tw`border-2 border-red-500 text-center rounded-full p-6 flex-shrink-0 relative`}
     img {
       ${tw`w-8 h-8`}
     }
@@ -41,7 +41,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-2 font-bold text-xl leading-none text-primary-500`}
+    ${tw`mt-2 font-bold text-xl leading-none text-red-500`}
   }
 
   .description {
@@ -64,27 +64,41 @@ export default () => {
 
   const cards = [
     {
-      imageSrc: ShieldIconImage,
-      title: "Ads Management",
-      description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+    title: "Reducción de impuestos",
+    description: "Registrar una LLC en los Estados Unidos como extranjero, puedes aprovechar las beneficargas fiscales del sistema tributario estadounidense y reducir la carga fiscal."
     },
-    { imageSrc: SupportIconImage, title: "Video Marketing" },
-    { imageSrc: CustomizeIconImage, title: "Customer Relation" },
-    { imageSrc: ReliableIconImage, title: "Product Outreach" },
-    { imageSrc: FastIconImage, title: "PR Campaign" },
-    { imageSrc: SimpleIconImage, title: "Product Expansion" }
+    {
+    title: "Protección de activos personales",
+    description: "Separar tus finanzas personales de las de la empresa, puedes proteger tus bienes y reducir el riesgo de responsabilidad ante demandas o deudas."
+    },
+    {
+    title: "Mejor acreditación crediticia",
+    description: "Registrar una LLC en los Estados Unidos permite proyectar una imagen profesiony de mayor calidad, mejorando tu crédito y aumentando las oportunidades de financiamiento."
+    },
+    {
+    title: "Mayor flexibilidad en la gestión de la empresa",
+    description: "Tener una LLC, puedes tener una mayor libertad en la toma de decisiones y la gestión de tu negocio, impulsando su crecimiento y éxito."
+    },
+    {
+    title: "Mayor acceso a financiamiento y oportunidades de inversión",
+    description: "Puedes acceder a una amplia gama de financiamiento y oportunidades de inversión, impulsando el crecimiento y éxito de tu negocio."
+    },
+    {
+    title: "Lanzamiento de tu e-commerce a nivel mundial",
+    description: "Expandi tu negocio a un público global través de internet, impulsando tus ventas y crecimiento empresarial."
+    }
   ];
 
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Our Professional <span tw="text-primary-500">Services</span></Heading>
+        <Heading>¿Por qué <span tw="text-red-500">crear una LLC?</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
-              <span className="imageContainer">
+              {/* <span className="imageContainer">
                 <img src={card.imageSrc || defaultCardImage} alt="" />
-              </span>
+              </span> */}
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">

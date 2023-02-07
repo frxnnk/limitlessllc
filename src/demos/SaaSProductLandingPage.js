@@ -3,13 +3,13 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
-import Features from "components/features/ThreeColWithSideImage.js";
+// import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 import Pricing from "components/pricing/ThreePlans.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
-import FAQ from "components/faqs/SingleCol.js";
+import FAQ from "components/faqs/SimpleWithSideImage";
 import GetStarted from "components/cta/GetStarted";
 import Footer from "components/footers/FiveColumnWithBackground.js";
 import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
@@ -20,7 +20,8 @@ import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sig
 import PopularAndRecentBlogPosts from "components/blogs/PopularAndRecentBlogPosts";
 import ContactUs from "pages/ContactUs";
 import SimpleContactUs from "components/forms/SimpleContactUs";
-
+import Features from "components/features/DashedBorderSixFeatures";
+import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-red-600`;
   const HighlightedText = tw.span`text-red-600`;
@@ -41,12 +42,17 @@ export default () => {
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
       />
             <FAQ
-        subheading={<Subheading>FAQS</Subheading>}
-        heading={
-          <>
-            ¿Tenes <HighlightedText>Preguntas ?</HighlightedText>
-          </>
+                  imageSrc={customerSupportIllustrationSrc}
+                  imageContain={true}
+                  imageShadow={false}
+                  subheading={<Subheading>FAQS</Subheading>}
+                  heading={
+                    <>
+                      ¿Tenes <HighlightedText>Preguntas ?</HighlightedText>
+                    </>
+          
         }
+        description="Si no encontras la respuesta a tu pregunta, no dudes en contactarnos."
         faqs = {[
           {
             question: "¿Qué es una LLC?",
@@ -62,32 +68,10 @@ export default () => {
             question: "¿Cuánto tiempo se tarda en formar una LLC y abrir una cuenta bancaria?",
             answer:
             "El plazo para formar una LLC y abrir una cuenta bancaria varía, pero generalmente completamos el proceso en 15-20 dias habiles."
-            },
-            {
-            question: "¿Es su equipo experimentado en formación de LLC y apertura de cuentas bancarias?",
-            answer:
-            "Nuestro equipo es altamente experimentado y conocedor en formación de LLC y apertura de cuentas bancarias, brindando servicios de alta calidad a nuestros clientes."
-            },
-            {
-            question: "¿Qué incluyen cada uno de sus planes de precios?",
-            answer:
-            "Cada uno de nuestros planes de precios incluye diferentes niveles de servicios, incluyendo formación de LLC, apertura de cuenta bancaria y diseño web. Por favor, consulte nuestra página de precios para obtener más detalles."
-            },
-            {
-            question: "¿Cómo puedo empezar con sus servicios?",
-            answer:
-            "Para comenzar con nuestros servicios, simplemente seleccione el plan de precios que mejor se adapte a sus necesidades y complete el formulario en línea. Luego, nuestro equipo lo guiará a través del resto del proceso."
             }
         ]}
       />
-      <Features
-        subheading={<Subheading>Descubri</Subheading>}
-        heading={
-          <>
-            Ventajas de abrir <HighlightedText>tu LLC.</HighlightedText>
-          </>
-        }
-      />
+      <Features/>
       
       {/* <MainFeature
         subheading={<Subheading>Quality Work</Subheading>}
@@ -119,7 +103,7 @@ export default () => {
           }
         ]}
       /> */}
-      <PopularAndRecentBlogPosts />
+        {/* <PopularAndRecentBlogPosts /> */}
       <Pricing
         subheading={<Subheading>Precios</Subheading>}
         heading={
