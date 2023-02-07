@@ -58,7 +58,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({ cards = null, heading = "Amazing Features", subheading = "Features", description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }) => {
+export default ({ cards = null, heading = "Amazing Features", subheading = "Features", description = "Razones por las que tenes que obtener tu empresa en USA" }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
    *  1) imageSrc - the image shown at the top of the card
@@ -69,24 +69,23 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
 
   const defaultCards = [
     {
-      imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "Garantizamos la seguridad de tus datos y transacciones durante todo el proceso de creación de tu empresa."
+      title: "Ventaja fiscal: Reducción de impuestos",
+      description: "Al abrir una LLC en USA como extranjero, puedes aprovechar las ventajas fiscales del sistema tributario estadounidense y reducir el pago de impuestos."
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support",
-    description: "Nuestro equipo de soporte está disponible las 24 horas del día para responder a cualquier pregunta o inquietud que puedas tener."
+    {title: "Protección de activos personales",
+    description: "Al separar tus finanzas personales de las de la empresa, puedes proteger tus activos y minimizar el riesgo de responsabilidad en caso de demandas o deudas."
     },
-    { imageSrc: CustomizeIconImage, title: "Customizable",
-    description: "Ofrecemos soluciones personalizadas para satisfacer tus necesidades específicas."
+    {  title: "Mejor acreditación crediticia",
+    description: "Abrir una LLC en USA te permite proyectar una imagen profesional y de mayor categoría, lo que puede mejorar tu acreditación crediticia y las oportunidades de financiamiento."
     },
-    { imageSrc: ReliableIconImage, title: "Reliable",
-    description: "Te brindamos un servicio confiable y de calidad para ayudarte a lograr tus objetivos empresariales."  
+    {  title: "Mayor flexibilidad en la gestión de la empresa",
+    description: "Al tener una LLC, puedes tener mayor flexibilidad en la gestión y toma de decisiones empresariales, lo que puede impulsar el crecimiento y el éxito de tu empresa."  
     },
-    { imageSrc: FastIconImage, title: "Fast",
-    description: "Te aseguramos un proceso de creación rápido y eficiente para que puedas comenzar a operar cuanto antes."
+    {  title: "Mayor acceso a financiamiento y oportunidades de inversión",
+    description: "Al estar registrado en USA, puedes tener acceso a una amplia gama de financiamiento y oportunidades de inversión, lo que puede impulsar el crecimiento y el éxito de tu empresa."
     },
-    { imageSrc: SimpleIconImage, title: "Easy",
-    description: "Hacemos que sea fácil y accesible para ti abrir y mantener una empresa, sin importar dónde te encuentres."
+    {  title: "Lanzamiento de tu e-commerce a nivel mundial",
+    description: "Al estar registrado en USA, puedes expandir tu negocio y llegar a un público global a través de internet, lo que puede impulsar tus ventas y el crecimiento de tu empresa."
     }
   ];
 
@@ -102,9 +101,9 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
-              <span className="imageContainer">
+              {/* <span className="imageContainer">
                 <img src={card.imageSrc || defaultCardImage} alt="" />
-              </span>
+              </span> */}
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">

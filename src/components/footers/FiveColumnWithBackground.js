@@ -9,7 +9,7 @@ import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 
-const Container = tw.div`relative bg-primary-500 text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
+const Container = tw.div`relative bg-red-500 text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
 const FiveColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12`;
 
@@ -21,7 +21,7 @@ const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
 const Link = tw.a`border-b-2 border-transparent hocus:border-gray-100 pb-1 transition duration-300`;
 
-const Divider = tw.div`my-16 border-b-2 border-primary-400 w-full`;
+const Divider = tw.div`my-16 border-b-2 border-red-400 w-full`;
 
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
 
@@ -42,10 +42,10 @@ const SocialLink = styled.a`
 const DecoratorBlobContainer = tw.div`absolute inset-0 overflow-hidden rounded-lg`;
 const DecoratorBlob1 = tw(
   SvgDecoratorBlob1
-)`absolute top-0 left-0 w-80 h-80 transform -translate-x-20 -translate-y-32 text-primary-700 opacity-50`;
+)`absolute top-0 left-0 w-80 h-80 transform -translate-x-20 -translate-y-32 text-red-700 opacity-50`;
 const DecoratorBlob2 = tw(
   SvgDecoratorBlob1
-)`absolute bottom-0 right-0 w-80 h-80 transform  translate-x-32 translate-y-48 text-primary-700 opacity-50`;
+)`absolute bottom-0 right-0 w-80 h-80 transform  translate-x-32 translate-y-48 text-red-700 opacity-50`;
 
 export default () => {
   return (

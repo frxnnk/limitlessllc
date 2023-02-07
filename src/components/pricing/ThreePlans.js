@@ -85,7 +85,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob)`
 export default ({
   subheading = "Pricing",
   heading = "Flexible Plans.",
-  description = "Planes Razoables y Flexibles: Equilibrando Comodidad y Accesibilidad en Nuestras Soluciones Personalizadas",
+  description = "Equilibrando Comodidad y Accesibilidad en Nuestras Soluciones Personalizadas",
   plans = null,
   primaryButtonText = "Buy Now"
 }) => {
