@@ -59,7 +59,7 @@ export default ({ roundedHeaderButton }) => {
             Abra y Mantenga su Empresa de manera Segura y Eficiente.
             </Paragraph>
             <Actions>
-              <input type="text" placeholder="Your E-mail Address" />
+              <input type="text" placeholder="Ingresa tu mail" />
               <button>Comencemos</button>
             </Actions>
             {/* <CustomersLogoStrip>

@@ -118,12 +118,12 @@ export default ({
 
   const highlightGradientsCss = [
     css`
-      background: rgb(56, 178, 172);
-      background: linear-gradient(115deg, rgba(56, 178, 172, 1) 0%, rgba(129, 230, 217, 1) 100%);
+    background: rgb(245, 101, 101);
+    background: linear-gradient(115deg, rgba(245, 101, 101, 1) 0%, rgba(254, 178, 178, 1) 100%);
     `,
     css`
-      background: rgb(56, 178, 172);
-      background-image: linear-gradient(115deg, #6415ff, #7431ff, #8244ff, #8e56ff, #9a66ff);
+    background: rgb(245, 101, 101);
+    background: linear-gradient(115deg, rgba(245, 101, 101, 1) 0%, rgba(254, 178, 178, 1) 100%);
     `,
     css`
       background: rgb(245, 101, 101);

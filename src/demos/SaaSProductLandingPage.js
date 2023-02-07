@@ -141,7 +141,6 @@ export default () => {
 
             mainFeature: "Businesses",
             features: ["Registro de la empresa", "Employer ID Numbers (EIN) ", "Apertura de cuenta bancaria", "Soporte Avanzado."],
-            featured: true
           },
           {
             name: "Enterprise",
