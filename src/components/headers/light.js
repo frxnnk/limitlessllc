@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
-
+import { useAuth0 } from "@auth0/auth0-react";
 import logo from "../../images/logo.svg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
@@ -70,15 +70,18 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    * changing the defaultLinks variable below below.
    * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
    */
+  const LoginButton = () => {
+    const { loginWithRedirect } = useAuth0();
+    return <NavLink onClick={() => loginWithRedirect()}>Entrar</NavLink>;
+  };
+
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">Nosotros</NavLink>
-      <NavLink href="/#">Blog</NavLink>
+      {/* <NavLink href="/#">Nosotros</NavLink>
+      <NavLink href="/#">Blog</NavLink> */}
       <NavLink href="/#">Precios</NavLink>
       <NavLink href="/#">Contactate</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Entrar
-      </NavLink>
+      <LoginButton/>
       <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Registrarse</PrimaryLink>
     </NavLinks>
   ];

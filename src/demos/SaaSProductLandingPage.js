@@ -33,7 +33,7 @@ export default () => {
         subheading={<Subheading>Los pasos para obtener tu empresa</Subheading>}
         heading={
           <>
-            Nuestro proceso es <HighlightedText>muy sencillo</HighlightedText>
+            Proceso<HighlightedText> seguro, rapido y facil.</HighlightedText>
           </>
         }
         textOnLeft={false}
@@ -113,10 +113,10 @@ export default () => {
         }
         plans={[
           {
-            name: "Personal",
+            name: "Startup",
             price: "$399.99",
 
-            mainFeature: "Small Businesses",
+            mainFeature: "Startup",
             features: ["Registro de la empresa", "Employer ID Numbers (EIN) ", "Soporte Basico."]
           },
           {

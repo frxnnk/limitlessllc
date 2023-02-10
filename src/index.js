@@ -1,10 +1,17 @@
 import React from "react";
-import { createRoot } from 'react-dom/client';
+import ReactDOM from "react-dom";
 import App from "./App";
-import Modal from "react-modal";
+import { Auth0Provider } from "@auth0/auth0-react";
 
-Modal.setAppElement("#root");
-
-const container = document.getElementById('root');
-const root = createRoot(container);
-root.render(<App />);
+ReactDOM.render(
+  <Auth0Provider
+    domain="dev-41h-z2e6.us.auth0.com"
+    clientId="2E6YPQcWwZck4yUuetLB3EGy3ILag3UY"
+    authorizationParams={{
+      redirect_uri: 'http://localhost:3000/dashboard'
+    }}
+  >
+    <App />
+  </Auth0Provider>,
+  document.getElementById("root")
+);

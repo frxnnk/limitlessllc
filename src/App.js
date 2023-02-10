@@ -107,6 +107,7 @@ import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 import SaaSProductLandingPage from "demos/SaaSProductLandingPage";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "demos/dashboard";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -122,6 +123,7 @@ export default function App() {
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/" element={<SaaSProductLandingPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           {/* <Route path="/limitless" element={<HostingCloudLandingPage />} /> */}
         </Routes>
       </Router>
