@@ -24,7 +24,7 @@ const Actions = styled.div`
     ${tw`sm:pr-48 pl-8 py-4 sm:py-5 rounded-full border-2 w-full font-medium focus:outline-none transition duration-300  focus:border-primary-500 hover:border-gray-500`}
   }
   button {
-    ${tw`w-full sm:absolute right-0 top-0 bottom-0 bg-red-600 text-gray-100 font-bold mr-2 my-4 sm:my-2 rounded-full py-4 flex items-center justify-center sm:w-40 sm:leading-none focus:outline-none hover:bg-red-900 transition duration-300`}
+    ${tw`w-full sm:absolute right-0 top-0 bottom-0 bg-blue-600 text-gray-100 font-bold mr-2 my-4 sm:my-2 rounded-full py-4 flex items-center justify-center sm:w-40 sm:leading-none focus:outline-none hover:bg-blue-900 transition duration-300`}
   }
 `;
 
@@ -53,7 +53,7 @@ export default ({ roundedHeaderButton }) => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-            <span tw="text-red-600">Experimenta</span> la Libertad Empresarial<span tw="text-red-600"> con Nosotros</span>
+            <span tw="text-blue-600">Experimenta</span> la Libertad Empresarial<span tw="text-blue-600"> con Nosotros</span>
             </Heading>
             <Paragraph>
             Abra y Mantenga su Empresa de manera Segura y Eficiente.
