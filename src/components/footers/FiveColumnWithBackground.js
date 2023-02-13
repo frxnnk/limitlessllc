@@ -6,6 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import LogoImage from "images/logo-light.svg";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 import { ReactComponent as InstagramIcon } from "images/instagram-icon.svg";
+import { ReactComponent as MediumIcon } from "images/medium-blog-icon.svg";
 import { ReactComponent as LinkedIn } from "images/linkedin-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 
@@ -97,6 +98,9 @@ export default () => {
             </SocialLink>
             <SocialLink href="https://youtube.com">
               <LinkedIn />
+            </SocialLink>
+            <SocialLink href="https://medium.com/@finfreedomllc">
+              <MediumIcon />
             </SocialLink>
           </SocialLinksContainer>
         </ThreeColRow>
