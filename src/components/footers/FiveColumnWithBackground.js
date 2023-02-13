@@ -5,11 +5,11 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import LogoImage from "images/logo-light.svg";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
+import { ReactComponent as InstagramIcon } from "images/instagram-icon.svg";
+import { ReactComponent as LinkedIn } from "images/linkedin-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 
-const Container = tw.div`relative bg-red-500 text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
+const Container = tw.div`relative bg-blue-500 text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
 const FiveColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12`;
 
@@ -21,7 +21,7 @@ const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
 const Link = tw.a`border-b-2 border-transparent hocus:border-gray-100 pb-1 transition duration-300`;
 
-const Divider = tw.div`my-16 border-b-2 border-red-400 w-full`;
+const Divider = tw.div`my-16 border-b-2 border-blue-400 w-full`;
 
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
 
@@ -42,10 +42,10 @@ const SocialLink = styled.a`
 const DecoratorBlobContainer = tw.div`absolute inset-0 overflow-hidden rounded-lg`;
 const DecoratorBlob1 = tw(
   SvgDecoratorBlob1
-)`absolute top-0 left-0 w-80 h-80 transform -translate-x-20 -translate-y-32 text-red-700 opacity-50`;
+)`absolute top-0 left-0 w-80 h-80 transform -translate-x-20 -translate-y-32 text-indigo-700 opacity-50`;
 const DecoratorBlob2 = tw(
   SvgDecoratorBlob1
-)`absolute bottom-0 right-0 w-80 h-80 transform  translate-x-32 translate-y-48 text-red-700 opacity-50`;
+)`absolute bottom-0 right-0 w-80 h-80 transform  translate-x-32 translate-y-48 text-indigo-700 opacity-50`;
 
 export default () => {
   return (
@@ -53,7 +53,7 @@ export default () => {
       <Content>
         <FiveColumns>
           <Column>
-            <ColumnHeading>Main</ColumnHeading>
+            <ColumnHeading>FinFreedom</ColumnHeading>
             <LinkList>
               <LinkListItem>
                 <Link href="#">Blog</Link>
@@ -62,61 +62,10 @@ export default () => {
                 <Link href="#">FAQs</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Support</Link>
+                <Link href="#">Contacto</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">About Us</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column>
-          {/* <Column>
-            <ColumnHeading>Product</ColumnHeading>
-            <LinkList>
-              <LinkListItem>
-                <Link href="#">Log In</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Personal</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Business</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Team</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column>
-          <Column>
-            <ColumnHeading>Press</ColumnHeading>
-            <LinkList>
-              <LinkListItem>
-                <Link href="#">Logos</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Events</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Stories</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Office</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column> */}
-          <Column>
-            <ColumnHeading>Team</ColumnHeading>
-            <LinkList>
-              <LinkListItem>
-                <Link href="#">Career</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Founders</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Culture</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Onboarding</Link>
+                <Link href="#">Acerca de</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -124,16 +73,10 @@ export default () => {
             <ColumnHeading>Legal</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">GDPR</Link>
+                <Link href="#">Politicas de Privacidad</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Privacy Policy</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Terms of Service</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Disclaimer</Link>
+                <Link href="#">Terminos y Condiciones</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -142,18 +85,18 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             {/* <LogoImg src={LogoImage} /> */}
-            <LogoText>Liberty LLC</LogoText>
+            <LogoText>FinFreedom LLC</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2023 Liberty LLC. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>&copy; 2023 FinFreedom LLC. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://www.facebook.com/profile.php?id=100090206382579&mibextid=ZbWKwL">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
+            <SocialLink href="https://instagram.com/finfreedomllc?igshid=ZDdkNTZiNTM=">
+              <InstagramIcon />
             </SocialLink>
             <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
+              <LinkedIn />
             </SocialLink>
           </SocialLinksContainer>
         </ThreeColRow>
