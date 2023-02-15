@@ -28,9 +28,9 @@ const Column = styled.div`
 `;
 
 const Card = styled.div`
-  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-indigo-500 rounded-lg mt-12`}
+  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-indigo-700 rounded-lg mt-12`}
   .imageContainer {
-    ${tw`border-2 border-blue-600 text-center rounded-full p-6 flex-shrink-0 relative`}
+    ${tw`border-2 border-blue-800 text-center rounded-full p-6 flex-shrink-0 relative`}
     img {
       ${tw`w-8 h-8`}
     }
@@ -41,7 +41,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-2 font-bold text-xl leading-none text-blue-500`}
+    ${tw`mt-2 font-bold text-xl leading-none text-blue-800`}
   }
 
   .description {
@@ -92,7 +92,7 @@ export default () => {
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>¿Por qué <span tw="text-blue-600">crear una LLC?</span></Heading>
+        <Heading>¿Por qué <span tw="text-blue-800">crear una LLC?</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>

@@ -37,7 +37,7 @@ background: linear-gradient(135deg, rgba(76,81,191,1) 0%, rgba(102,126,234,1) 10
         ${tw`text-gray-200!`}
       }
       ${PlanFeatures} {
-        ${tw`border-indigo-500`}
+        ${tw`border-indigo-700`}
       }
       .feature:not(.mainFeature) {
         ${tw`text-gray-300!`}
@@ -119,15 +119,15 @@ export default ({
   const highlightGradientsCss = [
     css`
     background: #bee3f8;
-    background: linear-gradient(135deg, #63b3ed 0%, #3182ce 100%);
+    background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
     `,
     css`
     background: #bee3f8;
-    background: linear-gradient(135deg, #63b3ed 0%, #3182ce 100%);
+    background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
     `,
     css`
       background: #bee3f8;
-    background: linear-gradient(135deg, #63b3ed 0%, #3182ce 100%);
+    background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
     `
   ];
 

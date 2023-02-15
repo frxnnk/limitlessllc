@@ -23,8 +23,8 @@ import SimpleContactUs from "components/forms/SimpleContactUs";
 import Features from "components/features/DashedBorderSixFeatures";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 export default () => {
-  const Subheading = tw.span`uppercase tracking-widest font-bold text-blue-600`;
-  const HighlightedText = tw.span`text-blue-600`;
+  const Subheading = tw.span`uppercase tracking-widest font-bold text-blue-800`;
+  const HighlightedText = tw.span`text-blue-800`;
 
   return (
     <AnimationRevealPage>
