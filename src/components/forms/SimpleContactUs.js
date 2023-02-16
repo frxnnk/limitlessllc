@@ -60,7 +60,6 @@ export default () => {
                   </InputContainer>
                 </Column>
               </TwoColumn>
-
               <SubmitButton type="submit" value="Submit">Enviar</SubmitButton>
             </form>
           </div>
