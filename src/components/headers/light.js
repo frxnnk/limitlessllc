@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 import { useAuth0 } from "@auth0/auth0-react";
-import logo from "../../images/logo.svg";
+import logo from "images/logo-round.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
@@ -79,8 +78,9 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     <NavLinks key={1}>
       {/* <NavLink href="/#">Nosotros</NavLink>
       <NavLink href="/#">Blog</NavLink> */}
-      <NavLink href="/#">Precios</NavLink>
-      <NavLink href="/#">Contactate</NavLink>
+      <NavLink href="#pricing">Precios</NavLink>
+      <NavLink href="#contactUs">Contactate</NavLink>
+      <NavLink href="https://medium.com/@finfreedomllc">Blog</NavLink>
       <LoginButton/>
       <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Registrarse</PrimaryLink>
     </NavLinks>
@@ -91,7 +91,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   const defaultLogoLink = (
     <LogoLink href="/">
-      {/* <img src={logo} alt="logo" /> */}
+      { <img src={logo} alt="logo" /> }
       FinFreedom
     </LogoLink>
   );

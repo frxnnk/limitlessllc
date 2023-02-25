@@ -105,7 +105,7 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 import SaaSProductLandingPage from "demos/SaaSProductLandingPage";
-
+import { Link } from 'react-scroll';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "demos/dashboard";
 

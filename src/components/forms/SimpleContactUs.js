@@ -39,9 +39,9 @@ export default () => {
     <Container>
       <Content>
         <FormContainer>
-          <div tw="mx-auto max-w-4xl">
+          <div tw="mx-auto max-w-4xl">  {/*id="contactUs"*/}
             <h2>Hablemos :)</h2>
-            <form action="#">
+            <form  action="#">
               <TwoColumn>
                 <Column>
                   <InputContainer>
