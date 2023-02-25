@@ -8,10 +8,9 @@ import SimpleContactUs from "components/forms/SimpleContactUs";
 import { useAuth0 } from "@auth0/auth0-react";
 
 export default () => {
-
+  
     const LogoutButton = () => {
         const { logout } = useAuth0();
-      
         return (
           <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
             Log Out
@@ -30,7 +29,6 @@ export default () => {
           isAuthenticated && (
             <div>
               <h2>{user.name}</h2>
-              <p>{user.email}</p>
             </div>
           )
         );

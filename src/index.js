@@ -8,8 +8,8 @@ ReactDOM.render(
     domain="dev-41h-z2e6.us.auth0.com"
     clientId="2E6YPQcWwZck4yUuetLB3EGy3ILag3UY"
     authorizationParams={{
-    //   redirect_uri: 'http://localhost:3000/dashboard'
-      redirect_uri: 'https://libertyllc.vercel.app/dashboard'
+      //redirect_uri: 'http://localhost:3000/dashboard'
+      redirect_uri: 'https://finfreedom.us/dashboard'
     }}
   >
     <App />
