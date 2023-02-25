@@ -137,7 +137,7 @@ export default () => {
         ]}
       />
       <SimpleContactUs></SimpleContactUs>
-     {/* <TwoColContactUsWithIllustrationFullForm></TwoColContactUsWithIllustrationFullForm> Wyoming Form*/}
+     {/*<TwoColContactUsWithIllustrationFullForm></TwoColContactUsWithIllustrationFullForm> */}
       <Footer />
     </AnimationRevealPage>
   );
