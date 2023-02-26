@@ -22,7 +22,7 @@ import ContactUs from "pages/ContactUs";
 import SimpleContactUs from "components/forms/SimpleContactUs";
 import Features from "components/features/DashedBorderSixFeatures";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
-import TwoColContactUsWithIllustrationFullForm from "components/forms/TwoColContactUsWithIllustrationFullForm";
+import TwoColContactUsWithIllustrationFullForm from "components/forms/WyomingForm";
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-blue-800`;
   const HighlightedText = tw.span`text-blue-800`;

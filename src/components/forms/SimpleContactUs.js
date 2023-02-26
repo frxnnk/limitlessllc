@@ -15,6 +15,7 @@ const FormContainer = styled.div`
   h2 {
     ${tw`text-3xl sm:text-4xl font-bold`}
   }
+  
   input,textarea {
     ${tw`w-full bg-transparent text-white text-base font-medium tracking-wide border-b-2 py-2 text-white hocus:border-indigo-400 focus:outline-none transition duration-200`};
 
@@ -86,6 +87,7 @@ export default () => {
                         <Dropdown />
                       </DropdownStyle>
                   </InputContainer>
+                  <TextArea name="message" placeholder="Dejanos tu mensaje" />
                 </Column>
               </TwoColumn>
               <TwoColumn>

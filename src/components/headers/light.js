@@ -76,8 +76,6 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   const defaultLinks = [
     <NavLinks key={1}>
-      {/* <NavLink href="/#">Nosotros</NavLink>
-      <NavLink href="/#">Blog</NavLink> */}
       <NavLink href="#pricing">Precios</NavLink>
       <NavLink href="#contactUs">Contactate</NavLink>
       <NavLink href="https://medium.com/@finfreedomllc">Blog</NavLink>

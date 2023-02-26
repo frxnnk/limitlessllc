@@ -9,7 +9,7 @@ import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
 import Footer from "components/footers/FiveColumnDark.js";
 import serverRedundancyIllustrationImageSrc from "images/server-redundancy-illustration.svg"
 import serverSecureIllustrationImageSrc from "images/server-secure-illustration.svg"
-import TwoColContactUsWithIllustrationFullForm from "components/forms/TwoColContactUsWithIllustrationFullForm";
+import TwoColContactUsWithIllustrationFullForm from "components/forms/WyomingForm";
 
 
 export default () => {
