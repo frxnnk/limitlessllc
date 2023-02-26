@@ -6,6 +6,7 @@ import Hero from "components/hero/TwoColumnWithInput.js";
 import Footer from "components/footers/FiveColumnWithBackground.js";
 import SimpleContactUs from "components/forms/SimpleContactUs";
 import { useAuth0 } from "@auth0/auth0-react";
+import WyomingForm from "components/forms/WyomingForm";
 
 export default () => {
   
@@ -38,7 +39,7 @@ export default () => {
     <AnimationRevealPage>
       <LogoutButton />
       <Profile />
-      <SimpleContactUs></SimpleContactUs>
+      <WyomingForm></WyomingForm>
       <Footer />
     </AnimationRevealPage>
   );
